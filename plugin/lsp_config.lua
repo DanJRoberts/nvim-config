@@ -15,12 +15,25 @@ end
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 -- LSPs will fail to install if unzip is not installed on system
+
+-- LUA LSP config
 require("lspconfig").sumneko_lua.setup{
   on_attach = on_attach,
   capabilities = capabilities,      -- required for completion
+
+  -- tell LSP that 'vim' is part of the global name space to supress 
+  -- 'Undefined global `vim`' warnings, in nvim configs
+  settings = {
+    Lua = {
+      diagnostics = {
+        globals = { 'vim' }
+      }
+    }
+  }
 }
 
 require('lspconfig').gopls.setup{
   on_attach = on_attach,
+  capabilities = capabilities,      -- required for completion
 }
 
