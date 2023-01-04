@@ -63,9 +63,10 @@ Note: Packersync will fail if unzip isn't installed on system.
 ## Keymaps
 
 ## Misc (normal Mode )
- 
-| Map                | Function                   |  
-|====================|============================|  
+
+
+| Map                | Function                   |
+|-------------------:|:---------------------------|  
 | `<space>`          | leader                     |  
 | `<c-j>`            | Navigate to split below    |  
 | `<Down>`           | Navigate to split below    |  
@@ -82,13 +83,13 @@ Note: Packersync will fail if unzip isn't installed on system.
 ## Misc (insert Mode )
  
 | Map                | Function                   |  
-|====================|============================|  
+|--------------------|----------------------------|  
 | `jk`               | exit insert mode           |  
  
 ## Code Completion Keymaps
  
 | Map                | Function                   |  
-|====================|============================|  
+|--------------------|----------------------------|  
 | `<c-b>`            | Scroll -4                  |  
 | `<c-f>`            | Scroll  4                  |   
 | `<c-o>`            | complete                   |  
@@ -97,7 +98,7 @@ Note: Packersync will fail if unzip isn't installed on system.
 ## LSP Keymaps
  
 | Map                | Function                   |  
-|====================|============================|  
+|--------------------|----------------------------|  
 | `<leader>rn`       | rename symbol              |  
 | `<leader>ca`       | code action                |  
 | `gd`               | jump to definition         |  
@@ -107,7 +108,7 @@ Note: Packersync will fail if unzip isn't installed on system.
  
 ## Telescope Keymaps
 | Map                | Function                   |  
-|====================|============================|  
+|--------------------|----------------------------|  
 | `<leader>ff`       | find files                 |  
 | `<leader>fg`       | live grep                  |  
 | `<leader>fh`       | list of old files          |  
