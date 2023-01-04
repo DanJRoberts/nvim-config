@@ -64,51 +64,51 @@ Note: Packersync will fail if unzip isn't installed on system.
 
 ## Misc (normal Mode )
  
-| Map                | Function                   |
-|====================|============================|
-| `<space>`          | leader                     |
-| `<c-j>`            | Navigate to split below    |
-| `<Down>`           | Navigate to split below    |
-| `<c-k>`            | Navigate to split above    |
-| `<Up>`             | Navigate to split above    |
-| `<c-h>`            | Navigate to split to left  |
-| `<Left>`           | Navigate to split to left  |
-| `<c-l>`            | Navigate to split to right |
-| `<Right>`          | Navigate to split to right |
-| `<leader>h`        | clears search highlighting |
-| `<c-n>`            | Toggle nvim-tree           |
-| `<leader>h`        | clear search highlighting  |
+| Map                | Function                   |  
+|====================|============================|  
+| `<space>`          | leader                     |  
+| `<c-j>`            | Navigate to split below    |  
+| `<Down>`           | Navigate to split below    |  
+| `<c-k>`            | Navigate to split above    |  
+| `<Up>`             | Navigate to split above    |  
+| `<c-h>`            | Navigate to split to left  |  
+| `<Left>`           | Navigate to split to left  |  
+| `<c-l>`            | Navigate to split to right |  
+| `<Right>`          | Navigate to split to right |  
+| `<leader>h`        | clears search highlighting |  
+| `<c-n>`            | Toggle nvim-tree           |  
+| `<leader>h`        | clear search highlighting  |  
  
 ## Misc (insert Mode )
  
-| Map                | Function                   |
-|====================|============================|
-| `jk`               | exit insert mode           |
+| Map                | Function                   |  
+|====================|============================|  
+| `jk`               | exit insert mode           |  
  
 ## Code Completion Keymaps
  
-| Map                | Function                   |
-|====================|============================|
-| `<c-b>`            | Scroll -4                  |
-| `<c-f>`            | Scroll  4                  |
-| `<c-o>`            | complete                   |
-| `<CR>`             | confirm completion         |
+| Map                | Function                   |  
+|====================|============================|  
+| `<c-b>`            | Scroll -4                  |  
+| `<c-f>`            | Scroll  4                  |   
+| `<c-o>`            | complete                   |  
+| `<CR>`             | confirm completion         |  
   
 ## LSP Keymaps
  
-| Map                | Function                   |
-|====================|============================|
-| `<leader>rn`       | rename symbol              |
-| `<leader>ca`       | code action                |
-| `gd`               | jump to definition         |
-| `gD`               | jump to declaration        |
-| `gi`               | jump to implementation     |
-| `K`                | open hover card            |
+| Map                | Function                   |  
+|====================|============================|  
+| `<leader>rn`       | rename symbol              |  
+| `<leader>ca`       | code action                |  
+| `gd`               | jump to definition         |  
+| `gD`               | jump to declaration        |   
+| `gi`               | jump to implementation     |   
+| `K`                | open hover card            |   
  
 ## Telescope Keymaps
-| Map                | Function                   |
-|====================|============================|
-| `<leader>ff`       | find files                 |
-| `<leader>fg`       | live grep                  |
-| `<leader>fh`       | list of old files          |
-| `<leader><leader>` | list of old files          |
+| Map                | Function                   |  
+|====================|============================|  
+| `<leader>ff`       | find files                 |  
+| `<leader>fg`       | live grep                  |  
+| `<leader>fh`       | list of old files          |  
+| `<leader><leader>` | list of old files          |  
