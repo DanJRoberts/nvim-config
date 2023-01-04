@@ -1,5 +1,6 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
+vim.wo.wrap = false
 
 vim.opt.relativenumber = true
 vim.opt.number = true
@@ -14,28 +15,32 @@ local opts = { noremap = true, silent = true }
 
 -- navigate splits
 keymap('n', '<c-j>', '<c-w>j', opts) -- navigate to split below current
+keymap('n', '<Down>', '<c-w>j', opts) -- navigate to split below current
 keymap('n', '<c-k>', '<c-w>k', opts) -- navigate to split above current
+keymap('n', '<Up>', '<c-w>k', opts) -- navigate to split above current
 keymap('n', '<c-h>', '<c-w>h', opts) -- navigate to split left of current
+keymap('n', '<Left>', '<c-w>h', opts) -- navigate to split left of current
 keymap('n', '<c-l>', '<c-w>l', opts) -- navigate to split right of current
+keymap('n', '<Right>', '<c-w>l', opts) -- navigate to split right of current
+
+--
+keymap('i', 'jk', '<ESC>', opts) -- navigate to split right of current
 
 -- <leader>h clears search highlighting
-vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
+keymap('n', '<leader>h', ':nohlsearch<CR>', opts)
 
--- LSP key maps ':help vim.lsp' for further information
-keymap('n', 'gd', ':lua vim.lsp.buf.definition()<cr>', opts)            -- Jump to definition 
-keymap('n', 'gD', ':lua vim.lsp.buf.declaration()<cr>', opts)           -- Jump to declaration
-keymap('n', 'gi', ':lua vim.lsp.buf.implementation()<cr>', opts)        -- Jump to implementation
-keymap('n', 'K', ':lua vim.lsp.buf.hover()<cr>', opts)                  -- open hover card
-keymap('n', '<leader>k', ':lua vim.lsp.buf.signature_help()<cr>', opts) -- signature help  
-keymap('n', '<leader>rn', ':lua vim.lsp.buf.rename()<cr>', opts)        -- rename
+-- LSP keymaps are listed in ./plugin/lsp_config.lua 
 
--- toggle treesitter
-vim.keymap.set('n', '<c-n>', ':NvimTreeFindFileToggle<CR>')
+-- Code completion keymaps are listed in ./plugin/completion.lua 
+
+-- toggle nvim-tree
+keymap('n', '<c-n>', ':NvimTreeFindFileToggle<CR>', opts)
 
 -- telescope fuzzy finder
 local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
-vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
-vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
-vim.keymap.set('n', '<leader>fo', builtin.oldfiles, {})
+vim.keymap.set('n', '<leader>ff', builtin.find_files, {})       -- find filename
+vim.keymap.set('n', '<leader><leader>', builtin.oldfiles, {})   -- list previously opened files
+vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})        -- search for string in current directory
+vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})        -- List available help tags
+
+

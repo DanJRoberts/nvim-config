@@ -1,5 +1,6 @@
 local cmp = require("cmp")
 
+-- load Vscode like snippets
 require("luasnip.loaders.from_vscode").lazy_load()
 
 cmp.setup({

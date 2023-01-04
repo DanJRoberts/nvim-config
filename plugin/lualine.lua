@@ -3,6 +3,7 @@ require('lualine').setup {
     icons_enabled = true,
     theme = 'gruvbox',
   },
+  -- Adds full filename path in lualine
   sections = {
     lualine_a = {
       {

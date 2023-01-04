@@ -1,6 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-  ensure_installed = { "sumneko_lua", "gopls" }
+  ensure_installed = { "sumneko_lua"}
 })
 
 local on_attach = function (_, _ )
@@ -31,7 +31,7 @@ require("lspconfig").sumneko_lua.setup{
     }
   }
 }
-
+-- GoLang LSP config
 require('lspconfig').gopls.setup{
   on_attach = on_attach,
   capabilities = capabilities,      -- required for completion
