@@ -7,11 +7,18 @@ vim.opt.number = true
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 4
-
+vim.opt.spelllang = "en_ca"
 -- KEYMAPS --------------------------------------------------------------------
 --
 local keymap = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
+
+-- Spelling
+-- '<F7>' toggles Spellchecking
+-- '[s' navigates to next misspelled word
+-- ']s' navigates to previous misspelled word
+-- 'z=' suggest correction
+keymap('n', '<F7>', ':set spell!<CR>', opts) -- Toggle Spell check
 
 -- navigate splits
 keymap('n', '<c-j>', '<c-w>j', opts) -- navigate to split below current
