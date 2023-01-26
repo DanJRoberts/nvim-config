@@ -8,6 +8,8 @@ vim.opt.expandtab = true
 vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 4
 vim.opt.spelllang = "en_ca"
+vim.opt.colorcolumn = "80"
+
 -- KEYMAPS --------------------------------------------------------------------
 --
 local keymap = vim.api.nvim_set_keymap

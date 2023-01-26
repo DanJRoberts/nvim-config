@@ -107,6 +107,7 @@ Note: Packersync will fail if unzip isn't installed on system.
 | `K`                | open hover card            |   
  
 ## Telescope Keymaps
+
 | Map                | Function                   |  
 |-------------------:|:---------------------------|  
 | `<leader>ff`       | find files                 |  
